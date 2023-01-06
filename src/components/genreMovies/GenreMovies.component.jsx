@@ -30,7 +30,7 @@ function GenreMovies({ genreMovies, fetchGenreMoviesSearch }) {
             <h2 className='trending-header'>{genreName} Movies</h2>
             <div className='category-dropdown'>
                 <h4>Page: </h4>
-                <input onChange={(e) => setPage(e.target.value)} type='number' value={page} />
+                <input onChange={(e) => setPage(e.target.value)} type='number' min="1" value={page} />
             </div>
             <div className='trending-movies-list'>
                 {genreMovies &&
